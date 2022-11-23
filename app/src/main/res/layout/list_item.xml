@@ -37,7 +37,7 @@
             android:orientation="vertical">
 
             <TextView
-                android:id="@+id/tvOrderId"
+                android:id="@+id/maintext"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
@@ -53,14 +53,14 @@
                 android:orientation="horizontal">
 
                 <TextView
-                    android:id="@+id/tvqtyparent"
+                    android:id="@+id/text_1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Quantity: 1"
                     android:textSize="20dp" />
 
                 <TextView
-                    android:id="@+id/tvpriceparent"
+                    android:id="@+id/text_2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="16dp"
@@ -73,7 +73,15 @@
 
     </LinearLayout>
 
-
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="20dp"
+            android:text=">"
+            android:textColor="@color/black"
+            android:textSize="30dp" />
 </RelativeLayout>
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/nested_rv"
