@@ -15,12 +15,7 @@ import com.example.newbottomnav.videoModel.HomeViewModel
 class HomeFragment : Fragment() {
     private var _binding: FragmentHomeBinding? = null
     private lateinit var homeMvvm: HomeViewModel
-
-
-
     private val binding get() = _binding!!
-
-
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
@@ -29,7 +24,6 @@ class HomeFragment : Fragment() {
         val root = inflater.inflate(R.layout.fragment_dashboard, container, false)
         return root
     }
-
 
     override fun onDestroyView() {
         super.onDestroyView()
